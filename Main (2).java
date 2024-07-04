@@ -7,9 +7,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner s= new Scanner(System.in);
 //EX1
-    /*
-        for(int i=1; i<=100;i++ ){
-        if (i%15==0)
+
+        /*for(int i=1; i<=100;i++ ){
+        if (i%3==0&& i%5==0)
         {System.out.println("FizzBuzz");}
         else if(i%3==0)
         {System.out.println("Fizz");}
@@ -21,7 +21,7 @@ public class Main {
         /*System.out.println("Please enter a sentence:");
         String sen =s.nextLine();
         String sen2=" ";
-        for(int i=sen.length()-1; i>=1; i--){
+        for(int i=sen.length()-1; i>=0; i--){
         sen2= sen2+sen.charAt(i);
         }System.out.println("The reversed sentence is: "+sen2);*/
 
@@ -51,8 +51,10 @@ public class Main {
         while (powerNum!=0);
         System.out.println("The result is: " + result);*/
 //EX5
-       /* int evenCount=0;
+        int evenCount=0;
         int oddCount=0;
+        int sumEven=0;
+        int sumOdd=0;
         do{
             System.out.println("please enter your number(zero for stop):");
             int num = s.nextInt();
@@ -60,14 +62,14 @@ public class Main {
                 break;
             }
             else if(num%2==0){
-                evenCount++;}
+               sumEven=sumEven+num;}
             else{
-                oddCount++;}
+               sumOdd=sumOdd+num;}
 
 
         } while(true);
-        System.out.println("Total of even number:"+ evenCount);
-        System.out.println("Total of negatives number:"+ oddCount);*/
+        System.out.println("Total of even numbers:"+ sumEven);
+        System.out.println("Total of odd numbers:"+ sumOdd);
 //EX6
 
        /* int enterNum;
@@ -93,7 +95,7 @@ public class Main {
                 System.out.println("Day " + days);*/
  //EX8
 
-        System.out.print("Please enter a word: ");
+        /*System.out.print("Please enter a word: ");
         String words = s.nextLine();
         boolean palindrome = true;
         if (words == null || words.isEmpty()) {
@@ -108,9 +110,8 @@ public class Main {
         break;}
         left++;
         right--;}}
-        System.out.println(words + (palindrome ? " is a palindrome." : " is not a palindrome."));
+        System.out.println(words + (palindrome ? " is a palindrome." : " is not a palindrome."));*/
     }}
-
 
 
 
